@@ -1,0 +1,9 @@
+{
+  "name": "microprojects",
+  "version": "1.0.0",
+  "description": "Personal collection of small and simple projects",
+  "main": "index.js",
+  "repository": "https://github.com/Abaranasia/microprojects-js.git",
+  "author": "Abaranasia <rankirlian@gmail.com>",
+  "license": "MIT"
+}
