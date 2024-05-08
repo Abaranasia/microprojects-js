@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>exchangerate</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Exchange Rate</h1>
+
+    <input id="fromNumber" type="number">
+    <div>
+        FROM
+        <select id="from">
+            <option value="EUR" selected="selected">EUR</option>
+            <option value="USD">USD</option>
+        </select>
+    </div>
+    <div>
+        TO
+        <select id="to">
+            <option value="EUR">EUR</option>
+            <option value="USD" selected="selected">USD</option>
+        </select>    
+    </div>
+    <button onclick="calculareRates()">Get exchange</button>
+    <div id="result">0</div>
+</body>
+</html>
