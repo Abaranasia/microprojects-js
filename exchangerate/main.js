@@ -1,6 +1,4 @@
 const ER_API ="https://open.er-api.com/v6/latest";
-const EUR_API ="https://open.er-api.com/v6/latest/EUR";
-const CURRENT_PRICE= "https://api.coindesk.com/v1/bpi/currentprice.json"
 
 const getExchange = async (fromNumber, rateFrom, rateTo) => {
     const url= `${ER_API}/${rateFrom}`;
@@ -21,6 +19,6 @@ const calculareRates = async () => {
     const resultValue= document.querySelector("#result")
     
     const result = await getExchange(fromNumber, rateFrom, rateTo);
-    
+
     resultValue.innerHTML=`Exchange result is: ${result.rateTo.toFixed(2)} ${rateTo}`
 }
