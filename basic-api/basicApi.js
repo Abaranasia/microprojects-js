@@ -13,8 +13,15 @@
         .then(json => console.log(json))
     },
     
-    getItem: () => {
+    getItem: ({id}) => {
+        const url = `${BASE_URL}/${id}`;
 
+        fetch(url, {
+            method: 'GET',
+            headers,
+            })
+        .then(response => response.json())
+        .then(json => console.log(json))
     },
 
     postItem: () => {
