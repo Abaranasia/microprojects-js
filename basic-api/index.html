@@ -9,7 +9,7 @@
         const getAll = () => {
             basicApi.getAll();
         }
-
+        
         const getById = () => {
             const id= document.querySelector('#todoId').value;
             if (id > 0) basicApi.getItem({id});
@@ -39,6 +39,13 @@
         <p>Get one item by id: </p>
         <input type="number" id="todoId">
         <button onclick="getById()">getById</button>
+    </div>
+    <div>
+        <p>Post one item: </p>
+        Title: <input type="text" id="title">
+        Body: <input type="text" id="body">
+        <button onclick="post()">Post</button>
+        <div id="errorMsg"></div>
     </div>
 </body>
 </html>
