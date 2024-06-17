@@ -30,6 +30,11 @@
         fetch(url, {
             method: 'POST',
             headers,
+            body: JSON.stringify({
+                userId,
+                title,
+                body,
+            }),
             })
         .then(response => response.json())
         .then(json => console.log(json))
