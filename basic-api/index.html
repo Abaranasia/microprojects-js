@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Basic fetch</title>
+    <link rel="stylesheet" href="styles.css">
     <script src= "./basicApi.js"></script>
     <script src= "./basicService.js"></script>
 </head>
 <body>
     <div>
+        <h2>Basic fetch crud</h2>
+        <h4>jsonplaceholder</h4>
+    </div>
+    <div class="element">
         <p>Get All items: </p>
         <button onclick="getAll()">GetAll</button>
     </div>
-    <div>
+    <div class="element">
         <p>Get one item by id: </p>
         <input type="number" id="todoId">
         <button onclick="getById()">getById</button>
     </div>
-    <div>
+    <div class="element">
         <p>Post one item: </p>
         Title: <input type="text" id="title">
         Body: <input type="text" id="body">
