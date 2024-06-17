@@ -23,9 +23,16 @@
         .then(response => response.json())
         .then(json => console.log(json))
     },
+    
+    postItem: ({userId, title, body}) => {
+        const url = `${BASE_URL}`;
 
-    postItem: () => {
-
+        fetch(url, {
+            method: 'POST',
+            headers,
+            })
+        .then(response => response.json())
+        .then(json => console.log(json))
     },
 
     deleteItem: ({id}) => {
